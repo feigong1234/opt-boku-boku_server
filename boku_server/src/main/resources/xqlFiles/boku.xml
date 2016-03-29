@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xqls>
+	<xql name="queryUser" type="sql">
+		<param alias="map" defClass="java.util.HashMap"></param>
+		<return defClass="java.util.HashMap"></return>
+		<content>
+			select username,password from user where username=[map.username]
+		</content>
+	</xql>
+</xqls>
